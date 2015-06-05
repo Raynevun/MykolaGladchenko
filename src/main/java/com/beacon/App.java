@@ -5,10 +5,10 @@ import static com.beacon.ObtainBeaconValue.*;
 
 
 public class App {
+    private static String beaconHost = "https://beacon.nist.gov";
 
     public static void main(String [] args) {
-        String beaconValue = getLastBeaconValue();
-        //System.out.println(beaconValue);
+        String beaconValue = getLastBeaconValue(beaconHost);
         prettyPrintCharMap(summarizeCharsBeaconValue(beaconValue));
     }
 }
