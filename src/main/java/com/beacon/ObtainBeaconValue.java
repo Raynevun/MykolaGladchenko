@@ -35,7 +35,7 @@ public class ObtainBeaconValue {
 
     protected static String getBeaconValues (long epochDateStart, long epochDateEnd) {
         StringBuilder res = new StringBuilder();
-        System.out.println("About to obtain "+((epochDateEnd-epochDateStart)/60)+" beacon values from WebService. This may take some time.");
+        System.out.println("About to obtain "+((epochDateEnd-epochDateStart)/60+1)+" beacon values from WebService. This may take some time.");
         for (long i = epochDateStart; i <= epochDateEnd; i = i + 60) {
             System.out.println("Obtaining beacon value for Epoch: " + i);
             RestAssured.baseURI = beaconHost;
@@ -43,7 +43,6 @@ public class ObtainBeaconValue {
             String beaconValue = xml.xmlPath().get("record.outputValue");
             res.append(beaconValue);
         }
-        //System.out.println(String.valueOf(res));
         return String.valueOf(res);
     }
 

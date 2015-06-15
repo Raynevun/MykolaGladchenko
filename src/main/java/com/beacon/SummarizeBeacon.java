@@ -35,9 +35,8 @@ public class SummarizeBeacon {
         }
         for (Character c:numChars.keySet()){
             System.out.println(c+","+ numChars.get(c)+"");
-            return true;
         }
-        return false;
+        return true;
     }
 
 }
