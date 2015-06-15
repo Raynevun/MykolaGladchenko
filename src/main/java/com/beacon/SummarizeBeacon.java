@@ -33,6 +33,7 @@ public class SummarizeBeacon {
         if (numChars == null) {
             throw new IllegalArgumentException("Parameter 'numChars' is null");
         }
+
         for (Character c:numChars.keySet()){
             System.out.println(c+","+ numChars.get(c)+"");
         }

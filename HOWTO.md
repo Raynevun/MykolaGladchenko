@@ -3,6 +3,7 @@ What was done:
 - Implemented points #1/2/3 from test assignment
 - App is runnable from command line with/without params
 - App classes: /MykolaGladchenko/src/main/java/com/beacon
+- Console input validations are here: /MykolaGladchenko/src/main/java/com/beacon/AppSettingsValidator.java
 - Unit tests classes: /MykolaGladchenko/src/test/java/com/beacon
 - Rest API tests classes: /MykolaGladchenko/src/rest-test/java/com/beacon
 - Implemented few basic rest tests for 1 URI of real REST web service
