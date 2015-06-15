@@ -29,13 +29,15 @@ public class SummarizeBeacon {
         return numChars;
     }
 
-    protected static void prettyPrintCharMap(Map<Character, Integer> numChars){
+    protected static boolean prettyPrintCharMap(Map<Character, Integer> numChars){
         if (numChars == null) {
             throw new IllegalArgumentException("Parameter 'numChars' is null");
         }
         for (Character c:numChars.keySet()){
             System.out.println(c+","+ numChars.get(c)+"");
+            return true;
         }
+        return false;
     }
 
 }
